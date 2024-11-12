@@ -34,6 +34,7 @@ def policy_improvement(V, P, gamma=1.0):
 ## POLICY ITERATION FUNCTION
 ### Name : MITHUN M S
 ### Register Number : 212222240067
+```
 def policy_iteration(P, gamma=1.0, theta=1e-10):
     random_actions = np.random.choice(tuple(P[0].keys()), len(P))
     pi = lambda s: {s:a for s,a in enumerate(random_actions)}[s]
@@ -44,7 +45,7 @@ def policy_iteration(P, gamma=1.0, theta=1e-10):
       if old_pi=={s:pi(s) for s in range(len(P))}:
         break
     return V, pi
-
+```
 ## OUTPUT:
 ### optimal policy
 ![image](https://github.com/user-attachments/assets/2b4b6e65-cc19-4313-bf81-c553ddb9ecd7)
